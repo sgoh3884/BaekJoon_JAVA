@@ -1,10 +1,6 @@
 // 1759 암호 만들기
-import java.awt.List;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class Main {
 	public static String oldPassword = "";
