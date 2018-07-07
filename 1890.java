@@ -18,12 +18,9 @@ public class Main {
 				if (num[i][j] == 0) continue; 
 				if (i + num[i][j] <= T) dp[i+num[i][j]][j] += dp[i][j];
 				if (j + num[i][j] <= T) dp[i][j+num[i][j]] += dp[i][j];
-
 			}
 		}
 
 		System.out.println(dp[T][T]);
-		
-	
 	}
 } 
