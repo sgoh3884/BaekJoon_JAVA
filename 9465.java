@@ -24,6 +24,7 @@ public class Main {
 				dp[j][1] = Math.max(dp[j-1][0], dp[j-1][2]) + N[0][j];
 				dp[j][2] = Math.max(dp[j-1][0], dp[j-1][1]) + N[1][j];
 			}
+			
 			bw.write(Math.max(dp[M][0], Math.max(dp[M][1], dp[M][2])) + "\n");
 		}
 		bw.flush();
